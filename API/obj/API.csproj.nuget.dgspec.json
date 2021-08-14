@@ -40,6 +40,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+<<<<<<< HEAD
+=======
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[5.0.8, )"
+            },
+>>>>>>> parent of ebf2a04 (adding error handling)
             "Microsoft.Data.Sqlite.Core": {
               "target": "Package",
               "version": "[5.0.8, )"

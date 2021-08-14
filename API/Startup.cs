@@ -11,8 +11,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+<<<<<<< HEAD
 using API.Data;
 using Microsoft.EntityFrameworkCore;
+=======
+using System.Text;
+>>>>>>> parent of ebf2a04 (adding error handling)
 
 namespace API
 {
