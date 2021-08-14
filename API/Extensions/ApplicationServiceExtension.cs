@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using API.Data;
+using API.Helpers;
 using API.Interface;
 using API.Services;
 using Microsoft.EntityFrameworkCore;
@@ -19,9 +20,9 @@ namespace API.Extensions
                 options.UseSqlite(config.GetConnectionString("DefaultConnection"));
 
             });
-
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ITokenService, TokenService>();
-
+            services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
             return services;
         }
 
