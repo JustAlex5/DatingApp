@@ -37,6 +37,9 @@
 =======
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.8",
           "Microsoft.AspNetCore.Authorization": "5.0.8",
+<<<<<<< HEAD
+>>>>>>> parent of ebf2a04 (adding error handling)
+=======
 >>>>>>> parent of ebf2a04 (adding error handling)
           "Microsoft.Data.Sqlite.Core": "5.0.8",
           "Microsoft.EntityFrameworkCore": "5.0.8",
@@ -385,6 +388,9 @@
           "lib/net5.0/Microsoft.AspNetCore.Metadata.dll": {}
         }
       },
+<<<<<<< HEAD
+>>>>>>> parent of ebf2a04 (adding error handling)
+=======
 >>>>>>> parent of ebf2a04 (adding error handling)
       "Microsoft.CSharp/4.7.0": {},
       "Microsoft.Data.Sqlite.Core/5.0.8": {
@@ -662,6 +668,9 @@
           "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {}
         }
       },
+<<<<<<< HEAD
+>>>>>>> parent of ebf2a04 (adding error handling)
+=======
 >>>>>>> parent of ebf2a04 (adding error handling)
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
@@ -3258,6 +3267,9 @@
       "path": "microsoft.aspnetcore.metadata/5.0.8",
       "hashPath": "microsoft.aspnetcore.metadata.5.0.8.nupkg.sha512"
     },
+<<<<<<< HEAD
+>>>>>>> parent of ebf2a04 (adding error handling)
+=======
 >>>>>>> parent of ebf2a04 (adding error handling)
     "Microsoft.CSharp/4.7.0": {
       "type": "package",
@@ -3446,6 +3458,9 @@
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
       "serviceable": true,
+<<<<<<< HEAD
+>>>>>>> parent of ebf2a04 (adding error handling)
+=======
 >>>>>>> parent of ebf2a04 (adding error handling)
       "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "path": "microsoft.netcore.platforms/1.1.0",

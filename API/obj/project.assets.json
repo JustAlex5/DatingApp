@@ -51,6 +51,9 @@
           "lib/net5.0/Microsoft.AspNetCore.Metadata.dll": {}
         }
       },
+<<<<<<< HEAD
+>>>>>>> parent of ebf2a04 (adding error handling)
+=======
 >>>>>>> parent of ebf2a04 (adding error handling)
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
@@ -245,6 +248,7 @@
       },
       "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Primitives": "5.0.0"
@@ -259,6 +263,8 @@
       "Microsoft.Extensions.DependencyInjection/5.0.2": {
 =======
 >>>>>>> parent of ebf2a04 (adding error handling)
+=======
+>>>>>>> parent of ebf2a04 (adding error handling)
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
@@ -270,6 +276,7 @@
           "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
         "type": "package",
@@ -337,6 +344,8 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
 =======
+=======
+>>>>>>> parent of ebf2a04 (adding error handling)
       "Microsoft.Extensions.DependencyInjection/5.0.2": {
 >>>>>>> parent of ebf2a04 (adding error handling)
         "type": "package",
@@ -365,6 +374,7 @@
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
         }
       },
+<<<<<<< HEAD
 <<<<<<< HEAD
       "Microsoft.Win32.Primitives/4.3.0": {
         "type": "package",
@@ -454,6 +464,9 @@
         }
       },
       "runtime.native.System/4.3.0": {
+=======
+      "Microsoft.Extensions.Logging/5.0.0": {
+>>>>>>> parent of ebf2a04 (adding error handling)
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -482,6 +495,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+<<<<<<< HEAD
       "runtime.native.System.Net.Http/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -557,6 +571,9 @@
         }
       },
       "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
+=======
+      "Microsoft.Extensions.Options/5.0.0": {
+>>>>>>> parent of ebf2a04 (adding error handling)
         "type": "package",
         "runtimeTargets": {
           "runtimes/osx.10.10-x64/native/System.Security.Cryptography.Native.OpenSsl.dylib": {
@@ -565,6 +582,7 @@
           }
         }
       },
+<<<<<<< HEAD
       "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -631,6 +649,9 @@
       "SQLitePCLRaw.bundle_e_sqlite3/2.0.4": {
 =======
       "Microsoft.Extensions.Options/5.0.0": {
+>>>>>>> parent of ebf2a04 (adding error handling)
+=======
+      "Microsoft.Extensions.Primitives/5.0.0": {
 >>>>>>> parent of ebf2a04 (adding error handling)
         "type": "package",
         "dependencies": {
@@ -765,6 +786,7 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+<<<<<<< HEAD
       "Swashbuckle.AspNetCore.SwaggerGen/5.6.3": {
         "type": "package",
         "dependencies": {
@@ -781,6 +803,9 @@
         ]
       },
       "Swashbuckle.AspNetCore.SwaggerUI/5.6.3": {
+=======
+      "Microsoft.NETCore.Platforms/1.1.0": {
+>>>>>>> parent of ebf2a04 (adding error handling)
         "type": "package",
         "compile": {
           "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
@@ -842,9 +867,17 @@
         }
       },
       "NETStandard.Library/1.6.1": {
+<<<<<<< HEAD
 >>>>>>> parent of ebf2a04 (adding error handling)
         "type": "package",
         "dependencies": {
+=======
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.Win32.Primitives": "4.3.0",
+          "System.AppContext": "4.3.0",
+>>>>>>> parent of ebf2a04 (adding error handling)
           "System.Collections": "4.3.0",
           "System.Diagnostics.Debug": "4.3.0",
           "System.Diagnostics.Tracing": "4.3.0",
@@ -1234,6 +1267,9 @@
         },
         "runtime": {
           "lib/netstandard1.1/System.Buffers.dll": {}
+<<<<<<< HEAD
+>>>>>>> parent of ebf2a04 (adding error handling)
+=======
 >>>>>>> parent of ebf2a04 (adding error handling)
         }
       },
@@ -1332,6 +1368,7 @@
         }
       },
 <<<<<<< HEAD
+<<<<<<< HEAD
       "System.Resources.ResourceManager/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1347,6 +1384,8 @@
       },
       "System.Runtime/4.3.0": {
 =======
+=======
+>>>>>>> parent of ebf2a04 (adding error handling)
       "System.Diagnostics.Tools/4.3.0": {
 >>>>>>> parent of ebf2a04 (adding error handling)
         "type": "package",
@@ -2302,6 +2341,9 @@
         "microsoft.aspnetcore.metadata.nuspec"
       ]
     },
+<<<<<<< HEAD
+>>>>>>> parent of ebf2a04 (adding error handling)
+=======
 >>>>>>> parent of ebf2a04 (adding error handling)
     "Microsoft.CSharp/4.7.0": {
       "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
@@ -2567,6 +2609,7 @@
         "tools/netcoreapp2.1/GetDocument.Insider.deps.json",
         "tools/netcoreapp2.1/GetDocument.Insider.dll",
         "tools/netcoreapp2.1/GetDocument.Insider.runtimeconfig.json"
+<<<<<<< HEAD
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/5.0.0": {
@@ -2730,10 +2773,39 @@
       "sha512": "yPmkWiYIzQ12Clw70zlhPOQ3iNlH5hxFiHR/JHIMEGcAklmAo4H/kB7Cth4OGmyMzzIFEI9MebYbzi405rSQOA==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.sqlite/5.0.8",
+=======
+      ]
+    },
+    "Microsoft.Extensions.Caching.Abstractions/5.0.0": {
+      "sha512": "bu8As90/SBAouMZ6fJ+qRNo1X+KgHGrVueFhhYi+E5WqEhcnp2HoWRFnMzXQ6g4RdZbvPowFerSbKNH4Dtg5yg==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.abstractions/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Caching.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Abstractions.xml",
+        "microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.caching.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Caching.Memory/5.0.0": {
+      "sha512": "/1qPCleFOkJe0O+xmFqCNLFYQZTJz965sVw8CUB/BQgsApBwzAUsL2BUkDvQW+geRUVTXUS9zLa0pBjC2VJ1gA==",
+      "type": "package",
+      "path": "microsoft.extensions.caching.memory/5.0.0",
+>>>>>>> parent of ebf2a04 (adding error handling)
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+<<<<<<< HEAD
         "lib/netstandard2.1/_._",
         "microsoft.entityframeworkcore.sqlite.5.0.8.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlite.nuspec"
@@ -2743,14 +2815,45 @@
       "sha512": "AExjgB1mYZ0F8oh4QTtBmZnAUF7Ve2he7iZIaRJJR9zWHiAk7g00OtFy/6mjuONq8RL1Ys9nZozZu3alF+SfMg==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.sqlite.core/5.0.8",
+=======
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Caching.Memory.dll",
+        "lib/net461/Microsoft.Extensions.Caching.Memory.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
+        "microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
+        "microsoft.extensions.caching.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/5.0.0": {
+      "sha512": "ETjSBHMp3OAZ4HxGQYpwyGsD8Sw5FegQXphi0rpoGMT74S4+I2mm7XJEswwn59XAaKOzC15oDSOWEE8SzDCd6Q==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/5.0.0",
+>>>>>>> parent of ebf2a04 (adding error handling)
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
+<<<<<<< HEAD
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Sqlite.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Sqlite.xml",
         "microsoft.entityframeworkcore.sqlite.core.5.0.8.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlite.core.nuspec"
+=======
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+>>>>>>> parent of ebf2a04 (adding error handling)
       ]
     },
     "Microsoft.EntityFrameworkCore.Sqlite.Design/1.1.6": {
@@ -2819,6 +2922,7 @@
         "version.txt"
       ]
     },
+<<<<<<< HEAD
     "Microsoft.Extensions.Caching.Memory/5.0.0": {
       "sha512": "/1qPCleFOkJe0O+xmFqCNLFYQZTJz965sVw8CUB/BQgsApBwzAUsL2BUkDvQW+geRUVTXUS9zLa0pBjC2VJ1gA==",
       "type": "package",
@@ -2930,6 +3034,8 @@
         "version.txt"
       ]
     },
+=======
+>>>>>>> parent of ebf2a04 (adding error handling)
     "Microsoft.Extensions.Logging/5.0.0": {
       "sha512": "MgOwK6tPzB6YNH21wssJcw/2MKwee8b2gI7SllYfn6rvTpIrVvVS5HAjSU2vqSku1fwqRvWP0MdIi14qjd93Aw==",
       "type": "package",
@@ -2972,6 +3078,9 @@
         "version.txt"
       ]
     },
+<<<<<<< HEAD
+=======
+>>>>>>> parent of ebf2a04 (adding error handling)
 =======
 >>>>>>> parent of ebf2a04 (adding error handling)
     "Microsoft.Extensions.Options/5.0.0": {
@@ -3046,6 +3155,9 @@
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+<<<<<<< HEAD
+>>>>>>> parent of ebf2a04 (adding error handling)
+=======
 >>>>>>> parent of ebf2a04 (adding error handling)
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -6634,6 +6746,9 @@
 =======
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 5.0.8",
       "Microsoft.AspNetCore.Authorization >= 5.0.8",
+<<<<<<< HEAD
+>>>>>>> parent of ebf2a04 (adding error handling)
+=======
 >>>>>>> parent of ebf2a04 (adding error handling)
       "Microsoft.Data.Sqlite.Core >= 5.0.8",
       "Microsoft.EntityFrameworkCore >= 5.0.8",
@@ -6693,6 +6808,9 @@
             "target": "Package",
             "version": "[5.0.8, )"
           },
+<<<<<<< HEAD
+>>>>>>> parent of ebf2a04 (adding error handling)
+=======
 >>>>>>> parent of ebf2a04 (adding error handling)
           "Microsoft.Data.Sqlite.Core": {
             "target": "Package",

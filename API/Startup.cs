@@ -16,6 +16,9 @@ using API.Data;
 using Microsoft.EntityFrameworkCore;
 =======
 using System.Text;
+<<<<<<< HEAD
+>>>>>>> parent of ebf2a04 (adding error handling)
+=======
 >>>>>>> parent of ebf2a04 (adding error handling)
 
 namespace API

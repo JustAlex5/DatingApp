@@ -50,6 +50,9 @@
               "target": "Package",
               "version": "[5.0.8, )"
             },
+<<<<<<< HEAD
+>>>>>>> parent of ebf2a04 (adding error handling)
+=======
 >>>>>>> parent of ebf2a04 (adding error handling)
             "Microsoft.Data.Sqlite.Core": {
               "target": "Package",
