@@ -73,3 +73,7 @@ D:\Studies\DatingApp\API\bin\Debug\net5.0\Data\UserSeedData.json
 D:\Studies\DatingApp\API\bin\Debug\net5.0\AutoMapper.dll
 D:\Studies\DatingApp\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Studies\DatingApp\API\bin\Debug\net5.0\DotNetCore.Extensions.dll
+D:\Studies\DatingApp\API\bin\Debug\net5.0\appsettings.json
+D:\Studies\DatingApp\API\bin\Debug\net5.0\CloudinaryDotNet.dll
+D:\Studies\DatingApp\API\bin\Debug\net5.0\Microsoft.Extensions.WebEncoders.dll
+D:\Studies\DatingApp\API\bin\Debug\net5.0\Newtonsoft.Json.dll
