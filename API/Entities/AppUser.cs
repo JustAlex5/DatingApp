@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using API.Extensions;
-
+using System.Linq;
 namespace API.Entities
 {
     public class AppUser
@@ -24,15 +24,16 @@ namespace API.Entities
         public string City { get; set; }
         public string Country { get; set; }
         public ICollection<Photo> Photos  { get; set; }
+        //Users who love this user
 
-        // public int GetAge(){
-        //     return DateOfBirth.CalculateAge();
-        // }
-
-
+        // public ICollection<UserLike> LikedByUsers { get; set; }
+        //
+        // //users that like this user
+        // public IEnumerable<UserLike> LikedUsers { get; set; }
         
-
-   
-
+        public ICollection<UserLike> LikedByUsers { get; set; }
+        public ICollection<UserLike> LikedUsers { get; set; }
+        
+        
     }
 }

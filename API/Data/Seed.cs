@@ -12,9 +12,9 @@ namespace API.Data
     {
         public static async Task SeedUsers(DataContext context)
         {
-            if (await context.Users.AnyAsync()) return;
+            if (await context.Users.AnyAsync().ConfigureAwait(false)) return;
 
-            var userData = await System.IO.File.ReadAllTextAsync("Data/UserSeedData.json");
+            var userData = await System.IO.File.ReadAllTextAsync("Data/UserSeedData.json").ConfigureAwait(false);
 
             var users = JsonSerializer.Deserialize<List<AppUser>>(userData);
             foreach (var user in users)
@@ -29,7 +29,7 @@ namespace API.Data
 
             }
 
-            await context.SaveChangesAsync();
+            await context.SaveChangesAsync().ConfigureAwait(false);
         }
     }
 }

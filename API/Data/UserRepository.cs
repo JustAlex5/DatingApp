@@ -26,9 +26,9 @@ namespace API.Data
         public async Task<MemberDto> GetMemberAsync(string username)
         {
             return await _context.Users
-            .Where(x => x.UserName == username)
-            .ProjectTo<MemberDto>(_mapper.ConfigurationProvider)
-            .SingleOrDefaultAsync();
+                .Where(x => x.UserName == username)
+                .ProjectTo<MemberDto>(_mapper.ConfigurationProvider)
+                .SingleOrDefaultAsync().ConfigureAwait(false);
 
 
         }
@@ -53,27 +53,27 @@ namespace API.Data
             
              
             
-            return await PageList<MemberDto>.CreateAsync(query.ProjectTo<MemberDto>(_mapper.ConfigurationProvider).AsNoTracking(), userParams.PageNumber, userParams.PageSize);
+            return await PageList<MemberDto>.CreateAsync(query.ProjectTo<MemberDto>(_mapper.ConfigurationProvider).AsNoTracking(), userParams.PageNumber, userParams.PageSize).ConfigureAwait(false);
         }
 
         public async Task<IEnumerable<AppUser>> GetUserAsync()
         {
-            return await _context.Users.Include(p => p.Photos).ToListAsync();
+            return await _context.Users.Include(p => p.Photos).ToListAsync().ConfigureAwait(false);
         }
 
         public async Task<AppUser> GetUserByIdAsync(int id)
         {
-            return await _context.Users.FindAsync(id);
+            return await _context.Users.FindAsync(id).ConfigureAwait(false);
         }
 
         public async Task<AppUser> GetUserBynameAsync(string username)
         {
-            return await _context.Users.Include(p => p.Photos).SingleOrDefaultAsync(x => x.UserName == username);
+            return await _context.Users.Include(p => p.Photos).SingleOrDefaultAsync(x => x.UserName == username).ConfigureAwait(false);
         }
 
         public async Task<bool> SaveAllSync()
         {
-            return await _context.SaveChangesAsync() > 0;
+            return await _context.SaveChangesAsync().ConfigureAwait(false) > 0;
         }
 
         public void Update(AppUser user)
