@@ -8,6 +8,7 @@ import {PaginatedResult} from "../_models/pagination";
 import {UserParams} from "../_models/userParams";
 import {AccountService} from "./account.service";
 import {User} from "../_models/users";
+import { getPaginatedResult, getPaginationHeader } from './paginationHelper';
 
 
 @Injectable({
@@ -46,9 +47,9 @@ export class MembersService {
   }
 
   getLikes(predicate:string, pageNumber,pageSize){
-    let params=this.getPaginationHeader(pageNumber,pageSize);
+    let params=getPaginationHeader(pageNumber,pageSize);
     params=params.append('predicate',predicate);
-    return this.getPaginatedResult<Partial<Member[]>>(this.baseUrl + 'likes', params);
+    return getPaginatedResult<Partial<Member[]>>(this.baseUrl + 'likes', params, this.http);
 
 
   }
@@ -58,7 +59,7 @@ export class MembersService {
     if(response){
       return of(response);
     }
-  let params=this.getPaginationHeader(userParams.pageNumber,userParams.pageSize)
+  let params=getPaginationHeader(userParams.pageNumber,userParams.pageSize)
 
     params=params.append('minAge',userParams.minAge.toString());
     params=params.append('maxAge',userParams.maxAge.toString());
@@ -66,7 +67,7 @@ export class MembersService {
     params=params.append('orderby',userParams.orderBy)
 
     // if (this.members.length >0) return of(this.members);
-    return this.getPaginatedResult<Member[]>(this.baseUrl+'users',params). pipe(map(response => {
+    return getPaginatedResult<Member[]>(this.baseUrl+'users',params ,this.http). pipe(map(response => {
       this.memberCache.set(Object.values(userParams).join('-'), response);
       return response;
     }))
@@ -74,16 +75,7 @@ export class MembersService {
 
 
 
-  private getPaginationHeader(pageNumber:number, pageSize:number){
-    let params= new HttpParams();
 
-      params=params.append('pageNumber',pageNumber.toString());
-      params=params.append('pageSize',pageSize.toString());
-
-      return params;
-
-
-  }
 
   getMember(username: string | null){
     const member= [...this.memberCache.values()].reduce((arr,elem) => arr.concat(elem.result),[]).
@@ -112,17 +104,5 @@ export class MembersService {
     return this.http.delete(this.baseUrl+'users/delete-photo/'+ photoId);
   }
 
-  private getPaginatedResult<T>(url,params) {
-    const paginatedResult: PaginatedResult<T>= new PaginatedResult<T>();
-    return this.http.get<T>(url,{observe: 'response', params}).pipe(
-      map(response => {
-        paginatedResult.result = response.body;
-        if (response.headers.get('Pagination') !== null) {
-          paginatedResult.pagination = JSON.parse(response.headers.get('Pagination') || '{}')
-        }
-        return paginatedResult
 
-      })
-    )
-  }
 }

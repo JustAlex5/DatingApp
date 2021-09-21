@@ -14,6 +14,7 @@ export class AccountService {
   baseUrl=environment.apiUrl;
   private currentUserSource= new ReplaySubject<User>(1)
   currentUser$= this.currentUserSource.asObservable();
+  private Json: any;
   constructor(private http:HttpClient) { }
 
 
@@ -29,6 +30,9 @@ export class AccountService {
   }
 
   setCurrentUser(user:User){
+    user.roles=[];
+    const roles= this.getDecotedToken(user.token).role;
+    Array.isArray(roles)? user.roles =roles: user.roles.push(roles);
     localStorage.setItem('user',JSON.stringify(user));
     this.currentUserSource.next(user);
 
@@ -48,6 +52,10 @@ export class AccountService {
 
         })
       )
+    }
+
+    getDecotedToken(token){
+       return JSON.parse(atob(token.split('.')[1]));
     }
 
 

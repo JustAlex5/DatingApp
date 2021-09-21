@@ -3,6 +3,7 @@ using API.DTOs;
 using API.Entities;
 using AutoMapper;
 using API.Extensions;
+using Microsoft.AspNetCore.Routing.Constraints;
 
 namespace API.Helpers
 {
@@ -15,6 +16,10 @@ namespace API.Helpers
           CreateMap<Photo,PhotoDto>();
           CreateMap<MemberUpdateDTO, AppUser>();
           CreateMap<RegisterDto, AppUser>();
+          CreateMap<Message, MessageDTO>().ForMember(dest => dest.SenderPhotoUrl,
+                  opt => opt.MapFrom(src => src.Sender.Photos.FirstOrDefault(x => x.IsMain).Url))
+              .ForMember(dest => dest.RecipientPhotoUrl,
+                  opt => opt.MapFrom(src => src.Recipient.Photos.FirstOrDefault(x => x.IsMain).Url));
         }
     }
 }

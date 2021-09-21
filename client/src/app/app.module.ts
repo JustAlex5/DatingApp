@@ -28,6 +28,12 @@ import {LoadingInterceptor} from "./_intterceptors/loading.interceptor";
 import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 import { TextInputComponent } from './_forms/text-input/text-input.component';
 import { DateInputsComponent } from './_forms/date-inputs/date-inputs.component';
+import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
+import { AdminPanelComponent } from './Admin/admin-panel/admin-panel.component';
+import { HasRoleDirective } from './_directives/has-role.directive';
+import { UserManagmentComponent } from './Admin/user-managment/user-managment.component';
+import { PhotoManagmentComponent } from './Admin/photo-managment/photo-managment.component';
+import { RolesModalComponent } from './modals/roles-modal/roles-modal.component';
 
 
 
@@ -48,7 +54,13 @@ import { DateInputsComponent } from './_forms/date-inputs/date-inputs.component'
     MemberEditComponent,
     PhotoEditorComponent,
     TextInputComponent,
-    DateInputsComponent
+    DateInputsComponent,
+    MemberMessagesComponent,
+    AdminPanelComponent,
+    HasRoleDirective,
+    UserManagmentComponent,
+    PhotoManagmentComponent,
+    RolesModalComponent
   ],
   imports: [
     BrowserModule,
@@ -69,5 +81,6 @@ import { DateInputsComponent } from './_forms/date-inputs/date-inputs.component'
 
   ],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
