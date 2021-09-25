@@ -6,6 +6,7 @@ using API.Data;
 using API.Helpers;
 using API.Interface;
 using API.Services;
+using API.SignalR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,6 +17,7 @@ namespace API.Extensions
     {
         public static IServiceCollection AddApllicationsService (this IServiceCollection services, IConfiguration config)
         {
+            services.AddSingleton<PresenceTracker>();
             services.Configure<ClouddinarySettings>(config.GetSection("CloudinarySettings"));
             services.AddDbContext<DataContext>(options =>
             {

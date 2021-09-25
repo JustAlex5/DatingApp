@@ -3,6 +3,9 @@ import { Message } from 'src/app/_models/message';
 import {MessageService} from "../../_services/message.service";
 import {User} from "../../_models/users";
 import {NgForm} from "@angular/forms";
+import {Member} from "../../_models/member";
+import {NgxGalleryOptions} from "@kolkov/ngx-gallery";
+import {TabDirective} from "ngx-bootstrap/tabs";
 
 @Component({
   selector: 'app-member-messages',
@@ -14,17 +17,19 @@ export class MemberMessagesComponent implements OnInit {
   @Input() messages: Message[];
   @Input() username:string;
   messageContnet: string;
+  member:Member;
 
 
-  constructor(private messageService:MessageService) { }
+
+
+  constructor(public messageService:MessageService) { }
 
   ngOnInit(): void {
 
   }
 
   sendMessage(){
-    this.messageService.sendMessage(this.username, this.messageContnet).subscribe(message =>{
-      this.messages.push(message);
+    this.messageService.sendMessage(this.username, this.messageContnet).then(()  =>{
       this.messageForm.reset();
     })
   }
