@@ -33,6 +33,12 @@ namespace API.Data
 
         }
 
+        public async Task<string> GetUserGender(string username)
+        {
+            return await _context.Users.Where(x => x.UserName == username).Select(x => x.Gender)
+                .FirstOrDefaultAsync();
+        }
+
         public async Task<PageList<MemberDto>> GetMembersAsync(UserParams userParams)
         {
 
@@ -71,10 +77,6 @@ namespace API.Data
             return await _context.Users.Include(p => p.Photos).SingleOrDefaultAsync(x => x.UserName == username).ConfigureAwait(false);
         }
 
-        public async Task<bool> SaveAllSync()
-        {
-            return await _context.SaveChangesAsync().ConfigureAwait(false) > 0;
-        }
 
         public void Update(AppUser user)
         {

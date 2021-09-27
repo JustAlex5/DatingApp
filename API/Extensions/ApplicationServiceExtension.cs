@@ -24,11 +24,9 @@ namespace API.Extensions
                 options.UseSqlite(config.GetConnectionString("DefaultConnection"));
 
             });
-            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<LogUserActivity>();
-            services.AddScoped<IMessageRepository, MessageRepository>();
-            services.AddScoped<ILikesRepository, LikesRepository>();
+            services.AddScoped<IUnitOfWork, UnitsOfWork>();
             services.AddScoped<IPhotoService, PhotoService>();
             services.AddAutoMapper(typeof(AutoMapperProfiles).Assembly);
             return services;
